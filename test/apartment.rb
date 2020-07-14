@@ -29,3 +29,9 @@ end
 
     assert_equal 1, unit1.bedrooms
   end
+
+  def test_it_has_bedrooms
+    unit1 = Apartment.new({number: "A1", monthly_rent: 1200, bathrooms: 1, bedrooms: 1})
+
+    assert_equal 1, unit1.bathrooms
+  end
