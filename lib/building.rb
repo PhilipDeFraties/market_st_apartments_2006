@@ -11,5 +11,10 @@ class Building
     @units << unit
   end
 
+  def renters
+    @units.map do |unit|
+      unit.renter.name
+    end
+  end
 
-end
+  end
